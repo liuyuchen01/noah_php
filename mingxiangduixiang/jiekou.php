@@ -7,6 +7,9 @@
 //
 //要实现一个接口，使用 implements 操作符。类中必须实现接口中定义的所有方法，否则会报一个致命错误。类可以实现多个接口，用逗号来分隔多个接口的名称。
 // 声明一个'iTemplate'接口
+//接口是抽干了的抽象类
+//里面所有的方法都是抽象方法
+//在真实项目中，先写接口，再写抽象类，然后写具体类
 interface iTemplate
 {
     public function setVariable($name, $var);

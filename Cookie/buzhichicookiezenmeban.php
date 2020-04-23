@@ -5,11 +5,8 @@
 </head>
 <body>
 
-<form action="welcome.php" method="post">
-    名字: <input type="text" name="name">
-    年龄: <input type="text" name="age">
-    <input type="submit">
-</form>
+欢迎 <?php echo $_POST["name"]; ?>.<br>
+你 <?php echo $_POST["age"]; ?> 岁了。
 
 </body>
 </html>

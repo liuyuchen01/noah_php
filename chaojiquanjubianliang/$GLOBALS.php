@@ -6,6 +6,7 @@ $y = 25;
 
 function addition()
 {
+    print_r($GLOBALS);
     $GLOBALS['z'] = $GLOBALS['x'] + $GLOBALS['y'];
 }
 
