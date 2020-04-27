@@ -1,7 +1,7 @@
 <?php
 // 允许上传的图片后缀
-$allowedExts = array("gif", "jpeg", "jpg", "png");
-$temp = explode(".", $_FILES["file"]["name"]);
+$allowedExts = array("gif", "jpeg", "jpg", "png");//advclose.gif
+$temp = explode(".", $_FILES["file"]["name"]);//获取advclose和gif
 $extension = end($temp);        // 获取文件后缀名
 if ((($_FILES["file"]["type"] == "image/gif")
         || ($_FILES["file"]["type"] == "image/jpeg")
@@ -10,7 +10,7 @@ if ((($_FILES["file"]["type"] == "image/gif")
         || ($_FILES["file"]["type"] == "image/x-png")
         || ($_FILES["file"]["type"] == "image/png"))
     && ($_FILES["file"]["size"] < 204800)    // 小于 200 kb
-    && in_array($extension, $allowedExts))
+    && in_array($extension, $allowedExts))  // in_array是否在数组中
 {
     if ($_FILES["file"]["error"] > 0)
     {
